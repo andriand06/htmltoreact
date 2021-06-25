@@ -138,23 +138,29 @@ export default function Homepage() {
 
                </Section>
                <Section className="pricing">
+                   
                <div class="container">
 						<div
 							class="pricing-inner section-inner has-top-divider"
 						>
 							<div class="section-header center-content">
 								<div class="container-xs">
+                                <Fade bottom delay={1000}>
 									<h2 class="mt-0 mb-16">
 										Simple, transarent pricing
 									</h2>
+                                </Fade>
+                                <Fade bottom delay={1500}>
 									<p class="m-0">
 										Lorem ipsum is common placeholder text
 										used to demonstrate the graphic elements
 										of a document or visual presentation.
 									</p>
+                                </Fade>
 								</div>
 							</div>
 							<div class="tiles-wrap">
+                                <Fade bottom delay={2000}>
                                 {
                                     listPricing.map((list,index) => <Card key={index} hasShadow>
                                         <div class="pricing-item-content">
@@ -198,10 +204,14 @@ export default function Homepage() {
 											<Button isPrimary isBlock>Start free trial</Button>
 										</div>
 									</Card>)
+                                    
                                 }
+                                </Fade>
+                                
                             </div>
                         </div>
                     </div>
+                    
                </Section>
            </main>
            <Footer></Footer>
